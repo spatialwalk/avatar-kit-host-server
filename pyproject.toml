@@ -1,0 +1,13 @@
+[project]
+name = "avatarkit-demo-server"
+version = "0.1.0"
+description = "AvatarKit Host Mode demo server — bridges Python Server SDK with client demos via WebSocket"
+requires-python = ">=3.10"
+dependencies = [
+    "avatarkit>=0.1.0",
+    "websockets>=12.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+avatarkit-demo-server = "server:main"
